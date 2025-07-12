@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+
+.luffy {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #444;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.luffy:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: #007bff;
+}
+
+
+h1, h2 {
+  color: #222;
+  margin-top: 30px;
+}
+
+
+p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  padding: 0 15px;
+}
+
+
+table {
+  width: 95%;
+  margin: 0 auto 40px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 0.95em;
+}
+
+th {
+  background-color: #ddd;
+}
+
+.hobbies-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.hobbies-list li {
+  padding: 8px 12px;
+  border-right: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.hobbies-list li:last-child {
+  border-right: none;
+}
+
+
+@media (max-width: 600px) {
+  .luffy {
+    width: 120px;
+    height: 120px;
+  }
+
+  th, td {
+    font-size: 0.85em;
+    padding: 8px 10px;
+  }
+
+
+  .hobbies-list {
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hobbies-list li {
+    border-right: 1px solid #ccc;
+    font-size: 0.95em;
+    padding: 6px 10px;
+  }
+
+  .hobbies-list li:last-child {
+    border-right: none;
+  }
+}
